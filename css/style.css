@@ -10,8 +10,8 @@
 
 .main_header{
     overflow: hidden;
-    margin-top: none;
-    margin-left: 0px;
+    margin-top: -20px;
+    margin-bottom:-7px;
     height: 12%;
     width: 100%;
     padding: 10px;
@@ -26,7 +26,7 @@
     padding: 8px 20px;
     text-align: center;
     font-size: 0.8em;
-    margin: 2px 1px;
+    margin: -40px 10px ;
     cursor: pointer;
     font-family: 'Open Sans', sans-serif;
 }
@@ -79,26 +79,32 @@ canvas {
 /*  position: absolute;*/
   width: 100%;
   height: 100%;
-  background-image: url("../images/image.jpg");
+    position: relative;
+    margin-bottom: 0px;
+  background-image: url("../images/science-1182713__340.jpg");
   background-repeat: no-repeat;
+    z-index:-1;
 }
 .news_box{
-    margin-left: 1200px;
-    width: 100%;
+    margin-left: 930px;
+    width:100%;
+    height: 100px;
+    margin-top: -100px;
 }
 #news_header{
     font-family: 'Rubik', sans-serif;
 }
 .modal_box{
     background-color: lightgrey;
-    width: 250px;
+    width: 100px;
     border: none;
     padding: 25px;
     margin: 25px;
 }
 .modal_box_1{
-   margin: 20px;;
-    
+    height:0px;
+    padding-left: 50px;
+    width: 50%;
 }
 
 .holder { 
@@ -152,6 +158,7 @@ font-family: 'Lato', sans-serif;
   background-color: rgba(75,75,75,0.7);
   -webkit-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
+  
 }
 
 .hovereffect:hover .overlay {
@@ -254,13 +261,13 @@ font-family: 'Lato', sans-serif;
 }
 /*--Footer--*/
 .footer1{
-    margin-top: 80%; 
+ margin-top: 20%;
     background:#25292E; 
     padding-top:20px;
     font-family:Century Gothic;
 }
 .footer2{background:#222; padding-top:20px; padding-bottom:30px; }
-.footer1a>ul>li>a{text-decoration:none; color:#C3C0C0;}
+.footer1a>ul>li>a{text-decoration:none; color:#C3C0C;}
 .footer1a>ul>li>a:hover{color:#fff;}
 
 /*model boxes*/
@@ -311,7 +318,7 @@ a.button:hover {
 	color: #fff;
 }
 .grid {
-	padding: 3em 0 0 0;
+	padding: 3em 0 -100 0;
     margin-top: -270px;
 	width: 40%;
 /*	max-width: 1200px;*/
@@ -319,8 +326,10 @@ a.button:hover {
 	text-align: center;
 }
 .grid .one-half {
-	width: 50%;
+	width: 100px;
+    height: 100px;
 	float: left;
+    margin-top: 0px;
 }
 .grid .one-forth {
 	width: 25%;
@@ -331,13 +340,12 @@ a.button:hover {
 /* Common style */
 .grid figure {
 	position: relative;
-	z-index: 1;
-	display: inline-block;
-	overflow: hidden;
+	z-index: 2;
+	display: inline-flex;
+	overflow:hidden;
 	margin: -0.135em 0;
-	//width: 33.333%;
+	width: 50%;
 	height: 200px;
-	background: silver;
 	text-align: center;
 	cursor: pointer;
 }
@@ -345,11 +353,11 @@ a.button:hover {
 	height: 400px;
 }
 .grid figure img {
-	position: relative;
-	display: block;
-	min-width: 40%;
-	min-height: 100%;
-	opacity: 0.8;
+	position: static;
+	display:inline-block;
+	min-width: 50%;
+	min-height: 50%;
+	opacity: 1;
 	transition: opacity 0.5s, -transform 1s;
 }
 .grid figure img:hover {
@@ -657,7 +665,7 @@ figure.effect-slideright:hover h2 {
 		min-width: 100%;
 	}
 	.grid figure figcaption {
-		font-size: 90%;
+		font-size: 9 0%;
 	}
 }
 @media screen and (max-width: 664px) {
@@ -670,9 +678,323 @@ figure.effect-slideright:hover h2 {
 }
 
 .modal_box_2{
-    margin-left: 350px;
+    margin-left:180px;
+    height:0px;
+    width: 50%;
+    
 }
 .modal_box_3{
-    margin-top: -100px;
-    margin-left: 650px;
+    margin-left: 310px;
+    height: 0px;
+    width: 50%;
+}
+
+.modal_box_4{
+    margin-left:440px;
+    height: 0px;
+    width: 50%;
+    
+}
+.modal_box_5{
+    margin-left: 570px;
+    height: 0px;
+    width: 50%;
+    
+}
+
+.modal_box_6{
+    margin-left: 700px;
+    height: 0px;
+    width: 50%;
+    
+}
+
+.modal_box_7{
+    margin-left: 830px;
+    height: 0px;
+    width: 50%;
+}
+    
+.modal_box_8{
+    margin-left: 960px;
+    height: 0px;
+    width: 50%;
+}
+        
+
+
+.column {
+    float: right;
+    width: 25%;
+    margin-right: 160px;
+    background: white;
+    margin-top: 70px;
+   
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    padding: 0 16px;
+}
+
+.container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+.button1 {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #000;
+    text-align: center;
+    cursor: pointer;
+    width: 30%;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+div.background {
+  background-image: url(../images/rf.jpg) repeat 0 0;
+  border: 2px solid black;
+  width: 20%;
+  height: 30%;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+
+div.transbox {
+  margin: 10px;
+    height: 90%;
+    width: 90%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox p {
+ margin: auto;
+  font-weight:normal;
+  color: #000000;
+}
+
+div.background1 {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+  width: 20%;
+    height: 30%;
+    margin-top: -248px;
+    margin-left: 320px;
+}
+
+div.transbox1 {
+  margin: 10px;
+    height: 90%;
+    width: 90%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox1 p {
+ margin: auto;
+  font-weight:normal;
+  color: #000000;
+}
+
+div.background2 {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+  width: 20%;
+    height: 30%;
+    margin-top: -248px;
+    margin-left: 620px;
+}
+
+div.transbox2 {
+  margin: 10px;
+    height: 90%;
+    width: 90%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox2 p {
+ margin: auto;
+  font-weight:normal;
+  color: #000000;
+}
+
+div.background3 {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+  width: 20%;
+    height: 30%;
+    margin-top: 25px;
+    margin-left: 20px;
+}
+
+div.transbox3 {
+  margin: 10px;
+    height: 90%;
+    width: 90%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox3 p {
+ margin: auto;
+  font-weight:normal;
+  color: #000000;
+}
+
+div.background4 {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+  width: 20%;
+    height: 30%;
+    margin-top: -247px;
+    margin-left: 320px;
+}
+
+div.transbox4 {
+  margin: 10px;
+    height: 90%;
+    width: 90%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox4 p {
+ margin: auto;
+  font-weight:normal;
+  color: #000000;
+}
+
+div.background5 {
+  background: url(klematis.jpg) repeat;
+  border: 2px solid black;
+  width: 20%;
+    height: 30%;
+    margin-top: -247px;
+    margin-left: 620px;
+}
+
+div.transbox5 {
+  margin: 10px;
+    height: 90%;
+    width: 90%;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.5;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+
+div.transbox5 p {
+ margin: auto;
+  font-weight:normal;
+  color: #000000;
+}
+
+/*new*/
+.hovereffect1 {
+  width: 100%;
+  height: 100%;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+}
+
+.hovereffect1 .overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  left: 0;
+  background-color: rgba(75,75,75,0.7);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect1:hover .overlay {
+  background-color: rgba(48, 152, 157, 0.4);
+}
+
+.hovereffect1 img {
+  display: block;
+  position: relative;
+}
+
+.hovereffect1 h2 {
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+  position: relative;
+  font-size: 17px;
+  padding: 10px;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-transform: translateY(45px);
+  -ms-transform: translateY(45px);
+  transform: translateY(45px);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.hovereffect1:hover h2 {
+  -webkit-transform: translateY(5px);
+  -ms-transform: translateY(5px);
+  transform: translateY(5px);
+}
+
+.hovereffect1 a.info {
+  display: inline-block;
+  text-decoration: none;
+  padding: 7px 14px;
+  text-transform: uppercase;
+  color: #fff;
+  border: 1px solid #fff;
+  background-color: transparent;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  font-weight: normal;
+  margin: -10px 0 0 0;
+  padding: 4px 40px;
+    font-size: 0.9em;
+}
+
+.hovereffect1:hover a.info {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+}
+
+.hovereffect1 a.info:hover {
+  box-shadow: 0 0 5px #fff;
 }
